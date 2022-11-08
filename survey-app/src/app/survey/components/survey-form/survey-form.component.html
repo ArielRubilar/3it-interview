@@ -1,0 +1,17 @@
+<form class="form" (submit)="handleSubmit()" [formGroup]="formGroup">
+
+  <app-field >
+    <label for="musicalGenre">Estilos Musicales</label>
+   
+    <select name="musicalGenre" id="musicalGenre" formControlName="musicalGenre">
+      <option *ngFor="let genre of musicalGenres" [value]="genre.id">{{genre.name}}</option>
+    </select>
+
+  </app-field>
+  
+  <app-field>
+    <label for="email">Correo Electronico</label>
+    <input type="email" name="email" id="email" formControlName="email">
+  </app-field>
+
+</form>

@@ -1,0 +1,18 @@
+@import 'colors';
+
+:host {
+  width: inherit;
+
+  .links-content {
+    width: 100%;
+    display: grid;
+    list-style: none;
+    padding: 0;
+    gap: 1em;
+  }
+  
+  .links-content > li > * {
+    width: 100%;
+  }
+
+}

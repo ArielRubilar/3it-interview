@@ -1,0 +1,23 @@
+@import 'colors';
+
+:host {
+  background-color: $purple;
+  text-transform: uppercase;
+
+  .form {
+    display: grid;
+    gap:  1em;
+    width: 100%;
+    max-width: 30em;
+  }
+
+  .title{
+    color: $white;
+    font-size: 800;
+    font-size: 3em;
+    margin-bottom: .75em;
+  }
+  
+}
+
+

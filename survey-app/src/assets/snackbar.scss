@@ -1,0 +1,25 @@
+@import 'colors';
+
+.snackbar-type-fill-info {
+}
+
+/* Success */
+.snackbar-type-fill-success {
+  background:$green;
+}
+
+/* Error */
+.snackbar-type-fill-error {
+  background: $red;
+}
+
+.snackbar-type-fill-info, .snackbar-type-fill-success, .snackbar-type-fill-error {
+  color: $white;
+  border-radius: 0px !important;
+  border: 2px solid $black;
+
+  .mat-simple-snack-bar-content{
+    font-size: 1.5em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,12 @@
+@import 'colors';
+
+:host {
+  width: inherit;
+  .form {
+    margin: auto;
+    display: grid;
+    gap:  1em;
+    width: 100%;
+    max-width: 30em;
+  }
+}

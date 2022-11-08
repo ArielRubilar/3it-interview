@@ -1,0 +1,5 @@
+<app-survey-form  
+*ngIf="musicalGenres.length > 0"
+(submitResult)="handleSubmitResult($event)" 
+[musicalGenres]="musicalGenres">
+</app-survey-form>

@@ -1,0 +1,36 @@
+@import 'colors';
+
+.field {
+  width: inherit;
+  text-align: center;
+
+  &::ng-deep  > *{
+    width: 100%;
+  }
+
+  &::ng-deep > label  {
+    text-transform: uppercase;
+    display: block;
+    color: $white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  &::ng-deep >  input , &::ng-deep > select ,&::ng-deep > select > option {
+    border: 1px solid $black;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+  } 
+
+  &::ng-deep >  input.ng-invalid:not(.ng-pristine) , &::ng-deep > select.ng-invalid:not(.ng-pristine) {
+    border: 2px solid $red;
+  } 
+
+  &::ng-deep > input:focus , &::ng-deep > select:focus {
+    outline-style: solid;
+    outline-color: currentColor;
+    outline-width: 2px;
+  }
+}

@@ -1,0 +1,36 @@
+@import 'colors';
+
+:host {
+  background: inherit;
+
+  .container{
+    background: inherit;
+    display:flex;
+    min-height: 100vh;
+  }
+  
+  .page-content,.sidenav-content{
+    padding: 1em 4.5em;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 10em;
+  }
+
+  .sidenav{
+    width: 100%;
+    background: $gray;
+  }
+
+  .button-menu {
+    margin-right: auto;
+  }
+}
+
+
+

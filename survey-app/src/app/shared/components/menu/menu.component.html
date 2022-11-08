@@ -1,0 +1,7 @@
+<ul class="links-content">
+  <li *ngFor="let link of links">
+    <app-button (clicked)="handleClick(link.path)">
+      {{link.text}}
+    </app-button>
+  </li>
+</ul>

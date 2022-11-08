@@ -1,0 +1,21 @@
+
+<mat-drawer-container class="container" >
+
+  <mat-drawer-content class="page-content">
+    <button mat-icon-button class="button-menu" (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
+  </mat-drawer-content>
+
+  <mat-drawer #drawer class="sidenav" mode="side" autosize >
+    <div class="sidenav-content">
+      <button mat-icon-button class="button-menu" (click)="drawer.toggle()"><mat-icon>menu</mat-icon></button>
+      <div class="content" (click)="drawer.toggle()">
+          <app-menu>
+          </app-menu>
+      </div>
+    </div>
+  </mat-drawer>
+  
+</mat-drawer-container>

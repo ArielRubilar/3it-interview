@@ -1,0 +1,23 @@
+
+@import 'colors';
+
+:host {
+ 
+  table {
+    width: 100%;
+    table-layout: fixed;
+    background: transparent;
+    border-collapse: collapse;
+  }
+
+  table, th, td {
+    border: 2px solid $black;
+  }
+
+  .mat-header-cell , .mat-cell {
+    color: $black;
+    font-weight: 800;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}

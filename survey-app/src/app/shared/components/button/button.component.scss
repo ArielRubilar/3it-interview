@@ -1,0 +1,14 @@
+@import 'colors';
+
+
+:host{
+  .button {
+    
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 1px solid $black;
+    padding: .75em 1em;
+    cursor: pointer;
+    width: inherit;
+  }
+}
