@@ -24,7 +24,7 @@ Luego seguir instrucciones de intallacion del BackEnd y FrontEnd
 ```sh
 cd survey-service
 mvn install o installar dependencias con su IDE favorito
-Inicialisar proyecto con su IDE favorito
+Inicialiar proyecto con su IDE favorito
 ```
 
 ## Front End
