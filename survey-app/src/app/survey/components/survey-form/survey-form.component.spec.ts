@@ -34,7 +34,7 @@ describe('SurveyFormComponent', () => {
     const musicalGenreControl = component.formGroup.get('musicalGenre');
     musicalGenreControl?.setValue('1');
 
-    component.onSubmitResult.subscribe( values => {
+    component.submitResult.subscribe( values => {
       expect(values.data).toEqual({email:'TEST@MAIL.COM', genreId: '1'})
     })
     
@@ -44,10 +44,13 @@ describe('SurveyFormComponent', () => {
 
   it('should don`t emit value if invalid form', () => {
     
-    spyOn(component.onSubmitResult, 'emit');
+    spyOn(component.submitResult, 'emit');
 
     component.handleSubmit();
     
-    expect(component.onSubmitResult.emit).not.toHaveBeenCalled();
+    expect(component.submitResult.emit).not.toHaveBeenCalled();
   });
+
+
+ 
 });

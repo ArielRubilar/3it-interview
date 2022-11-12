@@ -25,8 +25,12 @@ export class SurveyFormWrapperComponent implements OnInit {
 
   ngOnInit(): void {
     this.musicalGenreService.fetchMusicalGenre().subscribe( {
-      next : (genres) => {this.musicalGenres = genres},
-      error: () => {this.showSnackBar('Ocurrió un problema, intente más tarde', 'error')}
+      next : (genres) => {
+        this.musicalGenres = genres
+      },
+      error: () => {
+        this.showSnackBar('Ocurrió un problema, intente más tarde', 'error')
+      }
     })
   }
 
@@ -47,7 +51,8 @@ export class SurveyFormWrapperComponent implements OnInit {
         this.showSnackBar('Su respuesta se ingresó correctamente', 'success')
       }catch(e) {
         let message = 'No se pudo ingresar su respuesta, intente más tarde'
-        if( e instanceof HttpErrorResponse && e.status === 400){
+        const isErrorOfParams =  e instanceof HttpErrorResponse && e.status === 400
+        if(isErrorOfParams){
           message = e.error.message
         }
         this.showSnackBar(message, 'error')
